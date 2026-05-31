@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="TF_logo_transp.png" />
+  <link rel="apple-touch-icon" href="TF_logo_transp.png" />
+
+  <title>Top Feeling | 美甲 · 美睫 · 修眉 · 裕廊东 Westgate · 新加坡</title>
+  <meta name="description" content="Top Feeling 位于新加坡裕廊东 Westgate #03-22，提供专业美甲、美睫接睫毛、修眉及面部护理。WhatsApp 预约：+65 9816 8488。" />
+  <meta name="keywords" content="美甲新加坡, 裕廊东美甲, Westgate美甲, gel nails Jurong East, nail salon Westgate Singapore, lash extension Jurong East, eyebrow shaping Singapore, Top Feeling Singapore" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://topfeelingsg.com/cn.html" />
+
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://topfeelingsg.com/cn.html" />
+  <meta property="og:title"       content="Top Feeling | 美甲 · 美睫 · 修眉 · 裕廊东 Westgate" />
+  <meta property="og:description" content="专业美甲、美睫与修眉，位于裕廊东 Westgate #03-22。欢迎 WhatsApp 预约。" />
+  <meta property="og:locale"      content="zh_SG" />
+  <meta property="og:site_name"   content="Top Feeling" />
+
+  <meta name="geo.region"    content="SG" />
+  <meta name="geo.placename" content="Jurong East, Singapore" />
+  <meta name="geo.position"  content="1.3340;103.7426" />
+  <meta name="ICBM"          content="1.3340, 103.7426" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NailSalon",
+    "name": "Top Feeling",
+    "description": "位于裕廊东 Westgate 的美甲、美睫与修眉专门店。",
+    "url": "https://topfeelingsg.com",
+    "telephone": "+6598168488",
+    "priceRange": "$",
+    "currenciesAccepted": "SGD",
+    "paymentAccepted": "Cash, PayNow, Visa, Mastercard",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3 Gateway Drive, #03-22, Westgate",
+      "addressLocality": "Jurong East",
+      "postalCode": "608532",
+      "addressCountry": "SG"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 1.3340, "longitude": 103.7426 },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "10:00", "closes": "21:00"
+    },
+    "sameAs": [
+      "https://www.instagram.com/topfeelingsg/",
+      "https://www.facebook.com/TopFeelingSG"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ══ TOKENS ══ */
+    :root {
+      --gold:         #B8952A;
+      --gold-light:   #cda94a;
+      --champagne:    #e8d5b0;   /* poster accent only */
+      --champagne-faint: #f7f1e6;
+      --brown:        #5a3e28;
+      --brown-mid:    #7a5a40;
+      --brown-soft:   #a08060;
+      --white:        #FFFFFF;
+      --off-white:    #FDFCFA;
+      --border:       rgba(184,149,42,0.22);
+      --border-soft:  rgba(90,62,40,0.10);
+      --serif:  'Cormorant Garamond', 'Noto Serif SC', Georgia, serif;
+      --sans:   'DM Sans', 'Noto Sans SC', sans-serif;
+      --radius: 4px;
+      --section: 96px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+      color: var(--brown-mid);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a   { color: inherit; text-decoration: none; }
+
+    /* ══ TYPOGRAPHY ══ */
+    .eyebrow {
+      font-family: var(--sans);
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    h1, h2, h3 {
+      font-family: var(--serif); font-weight: 400;
+      color: var(--brown); line-height: 1.2; letter-spacing: 0.03em;
+    }
+    h1 { font-size: clamp(2.4rem, 7vw, 4.5rem); }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    h3 { font-size: clamp(1.1rem, 3vw, 1.3rem); font-weight: 500; }
+    p  { font-size: clamp(0.92rem, 2vw, 1rem); }
+
+    /* ══ LAYOUT ══ */
+    .container { width: 90%; max-width: 1080px; margin-inline: auto; }
+    section { padding-block: var(--section); }
+
+    .divider {
+      width: 44px; height: 1px;
+      background: var(--gold); margin-block: 18px;
+    }
+
+    /* ══ BUTTONS ══ */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 8px; font-family: var(--sans); font-size: 13px; font-weight: 500;
+      letter-spacing: 0.1em; padding: 13px 28px;
+      border-radius: var(--radius); transition: all 0.3s ease;
+      cursor: pointer; border: none;
+    }
+    .btn-primary { background: var(--gold); color: var(--white); }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(184,149,42,0.22); }
+    .btn-outline { background: transparent; color: var(--brown); border: 1px solid var(--border-soft); }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
+
+    /* ══ TOP STRIP (promo banner — like Koiskin) ══ */
+    .top-strip {
+      background: var(--champagne);
+      text-align: center;
+      padding: 9px 16px;
+      font-family: var(--sans);
+      font-size: 11px; font-weight: 400; letter-spacing: 0.10em;
+      color: var(--brown);
+    }
+    .top-strip a {
+      font-weight: 500; color: var(--brown);
+      text-decoration: underline; text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+    .top-strip a:hover { color: var(--gold); }
+
+    /* ══ NAV ══ */
+    #mainNav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border-soft);
+      transition: box-shadow 0.3s ease;
+    }
+    #mainNav.scrolled { box-shadow: 0 2px 16px rgba(90,62,40,0.07); }
+
+    .nav-inner {
+      display: flex; align-items: center;
+      justify-content: space-between; height: 62px; gap: 20px;
+    }
+
+    .nav-logo {
+      font-family: var(--serif); font-size: 1.3rem; font-weight: 500;
+      color: var(--brown); letter-spacing: 0.06em;
+      display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+    }
+    .nav-logo-img { width: 32px; height: 32px; object-fit: contain; }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-size: 12px; font-weight: 500; letter-spacing: 0.08em;
+      color: var(--brown-mid); transition: color 0.3s; position: relative;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
+      height: 1px; background: var(--gold);
+      transform: scaleX(0); transition: transform 0.25s ease;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+
+    .nav-cta {
+      font-size: 12px; font-weight: 500; letter-spacing: 0.08em;
+      color: var(--gold); border: 1px solid var(--border);
+      padding: 8px 18px; border-radius: var(--radius); transition: all 0.3s;
+    }
+    .nav-cta:hover { background: var(--champagne-faint); }
+
+    .lang-switch {
+      font-size: 11px; letter-spacing: 0.12em;
+      display: flex; align-items: center; gap: 5px; color: var(--brown-soft);
+    }
+    .lang-switch a { opacity: 0.6; transition: opacity 0.2s; }
+    .lang-switch a:hover, .lang-switch .active { opacity: 1; font-weight: 500; }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--brown); transition: all 0.3s; }
+
+    .mobile-menu {
+      display: none; flex-direction: column;
+      background: var(--white);
+      position: fixed; inset: 0; z-index: 99;
+      align-items: center; justify-content: center; gap: 32px;
+      opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+    }
+    .mobile-menu.open { display: flex; opacity: 1; pointer-events: all; }
+    .mobile-menu a { font-family: var(--serif); font-size: 1.8rem; color: var(--brown); transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close { position: absolute; top: 22px; right: 26px; font-size: 1.4rem; color: var(--brown); cursor: pointer; background: none; border: none; }
+
+    /* ══ HERO ══ */
+    #hero {
+      min-height: 100svh;
+      display: flex; flex-direction: column; justify-content: center;
+      padding-top: 120px; padding-bottom: clamp(56px, 8vw, 96px);
+      position: relative; overflow: hidden;
+      background: var(--white);
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('hero-bg.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    /* champagne-tinted overlay — lighter than QC, right-side fade */
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(255,255,255,0.92) 0%,
+        rgba(255,255,255,0.80) 45%,
+        rgba(255,255,255,0.25) 100%
+      );
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+
+    .hero-eyeline {
+      font-family: var(--sans); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 14px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .hero-eyeline::before { content: ''; display: block; width: 28px; height: 1px; background: var(--gold); }
+
+    .hero-title {
+      font-family: var(--serif); font-weight: 400;
+      color: var(--brown); margin-bottom: 6px;
+      font-size: clamp(2.6rem, 7vw, 4.8rem);
+    }
+
+    .hero-subtitle {
+      font-family: var(--serif); font-size: clamp(1.1rem, 3vw, 1.6rem);
+      font-weight: 300; font-style: italic;
+      color: var(--brown-soft); margin-bottom: 16px;
+    }
+
+    .hero-desc {
+      font-size: clamp(0.9rem, 2vw, 0.97rem);
+      color: var(--brown-mid); max-width: 420px;
+      margin-bottom: 36px; line-height: 1.85;
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    .scroll-hint {
+      position: absolute; bottom: 28px; right: 0; z-index: 2;
+      writing-mode: vertical-rl; transform: rotate(180deg);
+      display: flex; align-items: center; gap: 10px;
+      color: var(--brown-soft); font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+    }
+    .scroll-hint::after {
+      content: ''; width: 1px; height: 36px;
+      background: var(--champagne); animation: scrollLine 1.8s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%   { transform: scaleY(0); transform-origin: bottom; }
+      50%  { transform: scaleY(1); transform-origin: bottom; }
+      51%  { transform: scaleY(1); transform-origin: top; }
+      100% { transform: scaleY(0); transform-origin: top; }
+    }
+
+    /* ══ SERVICES ══ */
+    #services { background: var(--off-white); }
+
+    .section-head { max-width: 540px; margin-bottom: 52px; }
+    .section-head p { color: var(--brown-soft); margin-top: 12px; }
+
+    .services-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px;
+    }
+
+    .service-card {
+      background: var(--white); padding: 40px 36px;
+      position: relative; overflow: hidden;
+      transition: background 0.3s ease;
+    }
+    .service-card::before {
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 2px; height: 0; background: var(--gold);
+      transition: height 0.4s ease;
+    }
+    .service-card:hover { background: var(--champagne-faint); }
+    .service-card:hover::before { height: 100%; }
+
+    .service-num {
+      font-family: var(--serif); font-size: 2.8rem;
+      color: var(--champagne); line-height: 1; margin-bottom: 18px;
+    }
+    .service-card h3 { margin-bottom: 10px; color: var(--brown); }
+    .service-card p { color: var(--brown-soft); font-size: 0.9rem; line-height: 1.75; }
+
+    /* ══ WHY ══ */
+    #why { background: var(--white); }
+
+    .why-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 48px 40px; margin-top: 52px;
+    }
+    .why-item {
+      padding-top: 22px; border-top: 1px solid var(--border-soft);
+      transition: border-color 0.3s;
+    }
+    .why-item:hover { border-color: var(--gold); }
+    .why-icon { width: 30px; height: 30px; margin-bottom: 14px; }
+    .why-item h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--brown); }
+    .why-item p { font-size: 0.88rem; color: var(--brown-soft); }
+
+    /* ══ REVIEWS ══ */
+    #reviews { background: var(--off-white); }
+
+    .reviews-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px; margin-top: 40px;
+    }
+    .review-card {
+      background: var(--white); padding: 28px 24px;
+      border: 1px solid var(--border-soft); border-radius: var(--radius);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .review-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(90,62,40,0.06); }
+    .review-stars { color: var(--gold); font-size: 13px; letter-spacing: 0.08em; margin-bottom: 12px; }
+    .review-text { font-size: 0.9rem; color: var(--brown-mid); line-height: 1.7; margin-bottom: 16px; }
+    .review-name { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brown-soft); }
+
+    /* ══ CONTACT ══ */
+    #contact { background: var(--white); }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .contact-info h2 { margin-bottom: 18px; }
+    .contact-info > p { color: var(--brown-soft); margin-bottom: 32px; }
+
+    .info-block { margin-bottom: 24px; }
+    .info-label {
+      font-size: 10px; font-weight: 500; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 5px;
+    }
+    .info-value { font-size: 0.92rem; color: var(--brown); line-height: 1.65; }
+    .info-value a { transition: color 0.2s; }
+    .info-value a:hover { color: var(--gold); }
+
+    .social-row { display: flex; gap: 12px; margin-top: 8px; }
+    .social-link {
+      width: 38px; height: 38px; border: 1px solid var(--border-soft);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      color: var(--brown-mid); transition: all 0.3s;
+    }
+    .social-link:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+    .contact-cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+
+    .contact-map {
+      background: var(--champagne-faint); min-height: 400px; height: 100%;
+      border-radius: 6px; overflow: hidden;
+      box-shadow: 0 8px 32px rgba(90,62,40,0.07);
+    }
+    .contact-map iframe { width: 100%; height: 100%; min-height: 400px; border: 0; display: block; }
+
+    /* ══ FOOTER ══ */
+    footer { background: var(--brown); padding: 56px 0 32px; }
+    .footer-inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+    .footer-logo { font-family: var(--serif); font-size: 1.55rem; font-weight: 500; color: var(--white); letter-spacing: 0.06em; margin-bottom: 2px; }
+    .footer-tagline { font-size: 11px; letter-spacing: 0.14em; color: var(--champagne); margin-bottom: 28px; }
+    .footer-links { display: flex; gap: 24px; margin-bottom: 24px; flex-wrap: wrap; justify-content: center; }
+    .footer-links a { font-size: 11px; color: rgba(255,255,255,0.45); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--champagne); }
+    .footer-social { display: flex; gap: 12px; margin-bottom: 32px; }
+    .footer-social a {
+      width: 34px; height: 34px; border: 1px solid rgba(255,255,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.45); transition: all 0.3s;
+    }
+    .footer-social a:hover { border-color: var(--champagne); color: var(--champagne); }
+    .footer-bottom {
+      width: 100%; border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 20px; font-size: 11px; color: rgba(255,255,255,0.28);
+    }
+
+    /* ══ FADE ANIMATION ══ */
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ══ RESPONSIVE — TABLET ══ */
+    @media (max-width: 900px) {
+      :root { --section: 72px; }
+      .services-grid { grid-template-columns: 1fr; gap: 2px; }
+      .why-grid      { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .contact-grid  { grid-template-columns: 1fr; gap: 44px; }
+      .reviews-grid  { grid-template-columns: 1fr; gap: 16px; }
+      .nav-links, .nav-cta, .lang-switch { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* ══ RESPONSIVE — MOBILE ══ */
+    @media (max-width: 600px) {
+      :root { --section: 60px; }
+      .why-grid  { grid-template-columns: 1fr; gap: 24px; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .hero-actions .btn { width: 100%; }
+      .contact-cta { flex-direction: column; }
+      .contact-cta .btn { justify-content: center; }
+      .footer-links { gap: 14px; }
+      .service-card { padding: 28px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ══ TOP STRIP — promo banner ══════════════════════════════════════════ -->
+<div class="top-strip">
+  ✦ 限时优惠：美睫接睫毛 首次 $68 &nbsp;·&nbsp;
+  <a href="cn-offers.html">查看详情 →</a>
+</div>
+
+<!-- ══ NAVIGATION ════════════════════════════════════════════════════════ -->
+<nav id="mainNav">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="TF_logo_transp.png" alt="Top Feeling Logo" class="nav-logo-img" onerror="this.style.display='none'" />
+      Top Feeling
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">服务项目</a></li>
+      <li><a href="#why">为何选择我们</a></li>
+      <li><a href="#reviews">顾客评价</a></li>
+      <li><a href="#contact">到访我们</a></li>
+      <li><a href="cn-offers.html">优惠</a></li>
+    </ul>
+    <a href="https://wa.me/6598168488?text=你好，我想预约 Top Feeling 的服务" class="nav-cta" target="_blank" rel="noopener">立即预约</a>
+    <div class="lang-switch">
+      <a href="index.html" class="lang">EN</a>
+      <span>/</span>
+      <a href="cn.html" class="lang active">中文</a>
+    </div>
+    <div class="hamburger" id="hamburger" role="button" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="关闭">✕</button>
+  <a href="#services"   onclick="closeMobile()">服务项目</a>
+  <a href="#why"        onclick="closeMobile()">为何选择我们</a>
+  <a href="#reviews"    onclick="closeMobile()">顾客评价</a>
+  <a href="#contact"    onclick="closeMobile()">到访我们</a>
+  <a href="cn-offers.html" onclick="closeMobile()">优惠</a>
+  <div style="display:flex; gap:18px; margin-top:8px;">
+    <a href="index.html" onclick="closeMobile()" style="font-size:1.1rem; font-family:var(--sans);">EN</a>
+    <a href="cn.html"    onclick="closeMobile()" style="font-size:1.1rem; font-family:var(--sans); color:var(--gold);">中文</a>
+  </div>
+  <a href="https://wa.me/6598168488" target="_blank" rel="noopener" style="color:var(--gold); font-size:1.3rem; margin-top:16px; font-family:var(--sans);">WhatsApp 预约</a>
+</div>
+
+<!-- ══ HERO ═══════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <p class="hero-eyeline">美甲 · 美睫 · 修眉 · 裕廊东 Westgate</p>
+    <h1 class="hero-title">Top Feeling</h1>
+    <p class="hero-subtitle">让美丽成为一种日常</p>
+    <p class="hero-desc">
+      专业光疗美甲、接睫毛、修眉造型与面部护理，<br>
+      位于 Westgate #03-22。<br>
+      技术用心，价格透明，不强迫推销。
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/6598168488?text=你好，我想预约 Top Feeling 的服务，请问方便帮我安排吗？" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp 预约</a>
+      <a href="#services" class="btn btn-outline">查看服务项目</a>
+    </div>
+  </div>
+  <div class="scroll-hint">向下探索</div>
+</section>
+
+<!-- ══ SERVICES ════════════════════════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">我们的服务</span>
+      <div class="divider"></div>
+      <h2>专业美容护理</h2>
+      <p>从精致美甲到美睫修眉，每一项服务都用心对待。</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card fade-up">
+        <div class="service-num">01</div>
+        <h3>美甲 · Nail</h3>
+        <p>光疗甲、彩绘设计、法式美甲、卸甲，采用优质品牌凝胶，色泽持久亮丽，不伤甲面。</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-num">02</div>
+        <h3>美睫 · Lash Extension</h3>
+        <p>经典款、混合款与俄式扇形，根据眼形量身定制，打造自然清透或浓密有神的双眼。</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-num">03</div>
+        <h3>修眉造型 · Brow Design</h3>
+        <p>精准修眉与眉形设计，让面部轮廓更立体有神，日常妆容更省时省力。</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-num">04</div>
+        <h3>面部护理 · Facial</h3>
+        <p>基础清洁与补水护理，在美甲或美睫的间隙，给肌肤一份细致的额外关爱。</p>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:44px;">
+      <a href="cn-offers.html" class="btn btn-outline">查看当前优惠</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY ═════════════════════════════════════════════════════════════════ -->
+<section id="why">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">为何选择我们</span>
+      <div class="divider"></div>
+      <h2>用心服务，品质保证。</h2>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-item fade-up">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="#B8952A">
+          <circle cx="18" cy="18" r="17" stroke-width="1"/>
+          <path d="M11 18.5l5 5 9-10" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>技术精湛</h3>
+        <p>经验丰富的美容师团队，美甲、美睫均有专业培训，确保每次效果达标。</p>
+      </div>
+
+      <div class="why-item fade-up">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="#B8952A">
+          <circle cx="18" cy="18" r="17" stroke-width="1"/>
+          <path d="M18 10v8l5 3" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <h3>价格透明公道</h3>
+        <p>明码标价，没有隐藏消费，让您放心享受每次美容体验。</p>
+      </div>
+
+      <div class="why-item fade-up">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="#B8952A">
+          <circle cx="18" cy="18" r="17" stroke-width="1"/>
+          <path d="M14 20c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5" stroke-width="1.2" stroke-linecap="round"/>
+          <circle cx="18" cy="13" r="2" stroke-width="1"/>
+        </svg>
+        <h3>不强迫推销</h3>
+        <p>没有硬销，没有压力，让您在轻松愉快的氛围中享受美容时光。</p>
+      </div>
+
+      <div class="why-item fade-up">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="#B8952A">
+          <circle cx="18" cy="18" r="17" stroke-width="1"/>
+          <rect x="11" y="13" width="14" height="11" rx="1" stroke-width="1"/>
+          <path d="M15 13v-2a3 3 0 0 1 6 0v2" stroke-width="1"/>
+        </svg>
+        <h3>优质品牌产品</h3>
+        <p>选用 Jacqueline Gel 等优质品牌，美甲效果持久亮丽，对甲面温和。</p>
+      </div>
+
+      <div class="why-item fade-up">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="#B8952A">
+          <circle cx="18" cy="18" r="17" stroke-width="1"/>
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 3 3 0 0 1-1.4-.3L8 21l1.4-4.2a8.38 8.38 0 0 1-.7-2.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 2.8-.7h.4a8.48 8.48 0 0 1 6 6v.4z" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>WhatsApp 轻松预约</h3>
+        <p>无需复杂系统，直接发消息即可确认预约，简单快捷。</p>
+      </div>
+
+      <div class="why-item fade-up">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="#B8952A">
+          <circle cx="18" cy="18" r="17" stroke-width="1"/>
+          <path d="M12 22c0-4 2.5-7 6-7s6 3 6 7" stroke-width="1.2" stroke-linecap="round"/>
+          <line x1="18" y1="12" x2="18" y2="13.5" stroke-width="1.2" stroke-linecap="round"/>
+          <line x1="13.5" y1="13.5" x2="14.5" y2="14.5" stroke-width="1.2" stroke-linecap="round"/>
+          <line x1="22.5" y1="13.5" x2="21.5" y2="14.5" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <h3>便利位置</h3>
+        <p>Westgate #03-22，毗邻 Jurong East MRT，西部居民到访方便快捷。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ════════════════════════════════════════════════════════════ -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">顾客评价</span>
+      <div class="divider"></div>
+      <h2>她们说的</h2>
+      <p>来自真实顾客的分享，见证 Top Feeling 的用心与专业。</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"美甲师手工很细腻，每次来都能做出想要的款式。价格实惠，环境舒服，每次来都很享受。"</p>
+        <div class="review-name">— Google 评价</div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"接的睫毛超自然，美睫师很有耐心，会根据眼形建议合适款式，非常专业！"</p>
+        <div class="review-name">— Google 评价</div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"在 Westgate 难得这么良心的店，修眉做得很好，完全不需要担心被推销。"</p>
+        <div class="review-name">— Google 评价</div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:36px;">
+      <a href="https://www.google.com/maps/place/Top+Feeling/@1.3339592,103.7426162,17z" target="_blank" rel="noopener" class="btn btn-outline">在 Google 查看更多评价</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ════════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <span class="eyebrow">期待与你相见</span>
+        <div class="divider"></div>
+        <h2>到访我们</h2>
+        <p>欢迎提前通过 WhatsApp 预约，<br>为您安排合适的美容师与时段。</p>
+
+        <div class="info-block">
+          <div class="info-label">门店地址</div>
+          <div class="info-value">
+            3 Gateway Dr, #03-22, Westgate<br>
+            Singapore 608532<br>
+            <span style="color:var(--brown-soft); font-size:0.88em;">（靠近 Jurong East MRT）</span>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-label">营业时间</div>
+          <div class="info-value">每天 10:00 am – 9:00 pm</div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-label">WhatsApp 预约</div>
+          <div class="info-value">
+            <a href="https://wa.me/6598168488" target="_blank" rel="noopener">+65 9816 8488</a>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-label">关注我们</div>
+          <div class="social-row">
+            <a href="https://www.instagram.com/topfeelingsg/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.facebook.com/TopFeelingSG" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://wa.me/6598168488" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <a href="https://wa.me/6598168488?text=你好，我想预约 Top Feeling 的服务" class="btn btn-primary" target="_blank" rel="noopener">一键 WhatsApp 预约</a>
+          <a href="tel:+6598168488" class="btn btn-outline">直接拨打电话</a>
+        </div>
+      </div>
+
+      <div class="contact-map fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.736!2d103.7404!3d1.3340!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da100fa74c5ddd%3A0xab8b722502d023a9!2sTop%20Feeling!5e0!3m2!1szh-CN!2ssg!4v1717000000000"
+          width="100%" height="100%"
+          style="border:0; display:block; min-height:400px;"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container footer-inner">
+    <img src="TF_logo_transp.png" alt="Top Feeling Logo" style="width:50px;height:50px;object-fit:contain;border-radius:50%;margin-bottom:10px;opacity:0.75;" onerror="this.style.display='none'" />
+    <div class="footer-logo">Top Feeling</div>
+    <div class="footer-tagline">让美丽成为一种日常 · Westgate #03-22 · Jurong East</div>
+
+    <nav class="footer-links">
+      <a href="#services">服务项目</a>
+      <a href="#why">为何选择我们</a>
+      <a href="#reviews">顾客评价</a>
+      <a href="#contact">到访我们</a>
+      <a href="cn-offers.html">优惠</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/topfeelingsg/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.facebook.com/TopFeelingSG" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://wa.me/6598168488" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Top Feeling · 3 Gateway Dr #03-22, Westgate · Singapore 608532 · topfeelingsg.com
+    </div>
+  </div>
+</footer>
+
+<!-- ══ JAVASCRIPT ══════════════════════════════════════════════════════════ -->
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  document.getElementById('mobileClose').addEventListener('click', closeMobile);
+
+  function closeMobile() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.10, rootMargin: '0px 0px -36px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
