@@ -94,15 +94,7 @@
     .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(184,149,42,0.22); }
     .btn-outline { background: transparent; color: var(--brown); border: 1px solid var(--border-soft); }
     .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
-
-    /* TOP STRIP */
-    .top-strip {
-      background: var(--champagne); text-align: center; padding: 9px 16px;
-      font-size: 11px; font-weight: 400; letter-spacing: 0.10em; color: var(--brown);
-    }
-    .top-strip a { font-weight: 500; text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
-    .top-strip a:hover { color: var(--gold); }
-
+    
     /* NAV */
     #mainNav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -201,7 +193,7 @@
     /* ABOUT */
     #about { background: var(--off-white); }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
-    .about-image-wrap { position: relative; }
+    .about-image-wrap { position: relative;min-height: 420px; }
     .about-image-main { width: 100%; height: 420px; border-radius: 6px; overflow: hidden; background: var(--champagne-faint); }
     .about-img-file { width: 100%; height: 100%; object-fit: cover; display: block; }
     .about-frame { position: absolute; bottom: -16px; right: -16px; width: 55%; aspect-ratio: 1; border: 1px solid var(--border); border-radius: var(--radius); z-index: -1; }
@@ -345,12 +337,6 @@
   <span>立即预约</span>
 </a>
 
-<!-- ══ TOP STRIP ══ -->
-<div class="top-strip">
-  ✦ 首次体验优惠：快速甲油胶．快速Gel胶美甲 $38+，包卸（下次回店）&nbsp;·&nbsp;
-  <a href="https://wa.me/6598168488?text=你好，我想预约 Top Feeling 的 $38+ 快速Gel胶美甲">WhatsApp 立即预约</a>
-</div>
-
 <!-- ══ NAV ══ -->
 <nav id="mainNav">
   <div class="container nav-inner">
@@ -406,13 +392,13 @@
       <em>快速Gel胶美甲</em>
     </h1>
     <div class="hero-pillars">
-      <span class="hero-pillar">快速甲油胶 <br> ✦ 即做即干 &nbsp;·&nbsp; 维持 2–4 周 &nbsp;·&nbsp; 全程约 40–45 分钟 ✦</span>
+      <span class="hero-pillar">快速甲油胶 <br> ✦ 即做即干 &nbsp;·&nbsp; 维持 2–4 周 &nbsp;·&nbsp; 全程约 45 分钟 ✦<br><br>首次体验价<br></span>
     </div>
     <div class="hero-badge-row">
-      <div class="hero-price-tag"><sub>$</sub>38</div>
+    <h1 class="hero-title"><sup>$</sup>38<sub>+</sub></div>
     </div>
     <div class="hero-actions">
-      <a href="https://wa.me/6598168488?text=你好，我想预约 Top Feeling 的 $38+ 快速甲油胶体验" class="btn btn-primary" target="_blank" rel="noopener">立即预约</a>
+      <a href="https://wa.me/6598168488?text=你好，我想预约 Top Feeling 的 $38+ 快速甲油胶体验" class="btn btn-primary" target="_blank" rel="noopener">立即预约！</a>
     </div>
   </div>
   <div class="scroll-hint">向下探索</div>
@@ -462,16 +448,16 @@
       <span class="eyebrow">价格</span>
       <div class="divider"></div>
       <h2>简单透明，一个价格。</h2>
-      <p>无隐藏收费，无追加推销。</p>
+      <p>无隐藏收费。</p>
     </div>
     <div style="max-width:380px; margin-inline:auto;">
       <div class="pricing-card fade-up">
         <div class="pricing-badge">首次体验优惠</div>
         <div class="pricing-name">快速甲油胶</div>
-        <div class="pricing-duration">全程约 40–45 分钟</div>
-        <div class="pricing-price"><sup>$</sup>38</div>
+        <div class="pricing-duration">全程约 45 分钟</div>
+        <div class="pricing-price"><sup>$</sup>38<sub>+</sub></div>
         <div class="pricing-desc">
-          含修剪甲型、底胶、颜色胶、 <br>（可选 2 色含亮片）<br> 封层固化及净手礼。<br>下次回店免费卸甲。
+          含修剪甲型、底胶、颜色胶、 <br>（可选 2 色含亮片）<br> 封层固化及净手礼。<br><strong><b>下次回店免费卸甲。</b></strong>
         </div>
       </div>
     </div>
@@ -543,7 +529,7 @@
     <div class="book-banner-actions">
       <a href="https://wa.me/6598168488?text=你好，我想预约 Top Feeling 的 $38+ 快速甲油胶体验" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp 预约 · +65 9816 8488</a>
     </div>
-    <p class="book-banner-note">每天 上午 10:00 – 晚上 9:00 <br> Westgate #03-22 · 裕廊东</p>
+    <p class="book-banner-note">每天 上午 10:00 – 下午 9:00 <br>  · Westgate #03-22 · </p>
   </div>
 </section>
 
