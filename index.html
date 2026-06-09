@@ -852,6 +852,21 @@
     });
   }, { threshold: 0.10, rootMargin: '0px 0px -36px 0px' });
   document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    // ── Promo popup — opens after 3 seconds ──
+    function closePromo() {
+      document.getElementById('promoPopup').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    setTimeout(() => {
+      document.getElementById('promoPopup').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }, 3000);
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closePromo();
+    });
+  
 </script>
 
 </body>
