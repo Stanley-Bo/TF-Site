@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="TF_logo_transp.png" />
+  <link rel="apple-touch-icon" href="TF_logo_transp.png" />
+
+  <title>Current Offers | Top Feeling | Westgate Jurong East Singapore</title>
+  <meta name="description" content="Top Feeling current promotions at Westgate #03-22, Jurong East. Gel manicure, cat eye gel, bojin facial, leg massage and more. WhatsApp: +65 9816 8488." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://topfeelingsg.com/offers.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ══ TOKENS ══ */
+    :root {
+      --gold:            #B8952A;
+      --gold-light:      #cda94a;
+      --champagne:       #e8d5b0;
+      --champagne-faint: #f7f1e6;
+      --brown:           #5a3e28;
+      --brown-mid:       #7a5a40;
+      --brown-soft:      #a08060;
+      --white:           #FFFFFF;
+      --off-white:       #FDFCFA;
+      --border:          rgba(184,149,42,0.22);
+      --border-soft:     rgba(90,62,40,0.10);
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'DM Sans', sans-serif;
+      --radius: 4px;
+      --section: 96px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body { font-family: var(--sans); font-weight: 300; font-size: 16px; line-height: 1.85; color: var(--brown-mid); background: var(--white); overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a   { color: inherit; text-decoration: none; }
+
+    .eyebrow { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; color: var(--brown); line-height: 1.2; letter-spacing: 0.03em; }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); }
+    h2 { font-size: clamp(1.6rem, 4vw, 2.6rem); }
+    p  { font-size: clamp(0.92rem, 2vw, 1rem); }
+
+    .container { width: 90%; max-width: 1080px; margin-inline: auto; }
+    .divider { width: 44px; height: 1px; background: var(--gold); margin-block: 18px; }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--sans); font-size: 13px; font-weight: 500; letter-spacing: 0.1em; padding: 13px 28px; border-radius: var(--radius); transition: all 0.3s ease; cursor: pointer; border: none; }
+    .btn-primary { background: var(--gold); color: var(--white); }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(184,149,42,0.22); }
+    .btn-outline { background: transparent; color: var(--brown); border: 1px solid var(--border-soft); }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
+
+    /* ══ NAV ══ */
+    #mainNav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.97); border-bottom: 1px solid var(--border-soft); transition: box-shadow 0.3s ease; }
+    #mainNav.scrolled { box-shadow: 0 2px 16px rgba(90,62,40,0.07); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 20px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.3rem; font-weight: 500; color: var(--brown); letter-spacing: 0.06em; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .nav-logo-img { width: 32px; height: 32px; object-fit: contain; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 12px; font-weight: 500; letter-spacing: 0.08em; color: var(--brown-mid); transition: color 0.3s; position: relative; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 1px; background: var(--gold); transform: scaleX(0); transition: transform 0.25s ease; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-links a.active { color: var(--gold); }
+    .nav-links a.active::after { transform: scaleX(1); }
+    .nav-cta { font-size: 12px; font-weight: 500; letter-spacing: 0.08em; color: var(--gold); border: 1px solid var(--border); padding: 8px 18px; border-radius: var(--radius); transition: all 0.3s; }
+    .nav-cta:hover { background: var(--champagne-faint); }
+    .lang-switch { font-size: 11px; letter-spacing: 0.12em; display: flex; align-items: center; gap: 5px; color: var(--brown-soft); }
+    .lang-switch a { opacity: 0.6; transition: opacity 0.2s; }
+    .lang-switch a:hover, .lang-switch .active { opacity: 1; font-weight: 500; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--brown); transition: all 0.3s; }
+    .mobile-menu { display: none; flex-direction: column; background: var(--white); position: fixed; inset: 0; z-index: 99; align-items: center; justify-content: center; gap: 32px; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+    .mobile-menu.open { display: flex; opacity: 1; pointer-events: all; }
+    .mobile-menu a { font-family: var(--serif); font-size: 1.8rem; color: var(--brown); transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close { position: absolute; top: 22px; right: 26px; font-size: 1.4rem; color: var(--brown); cursor: pointer; background: none; border: none; }
+
+    /* ══ PAGE HEADER ══ */
+    .page-header {
+      padding-top: 110px;
+      padding-bottom: 52px;
+      text-align: center;
+      background: var(--off-white);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .page-header h1 { margin-bottom: 12px; }
+    .page-header p { color: var(--brown-soft); max-width: 480px; margin-inline: auto; }
+
+    /* ══ OFFERS GRID ══ */
+    .offers-section { padding-block: 64px; }
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    /* Each offer tile is a clickable card */
+    .offer-tile {
+      display: block;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--champagne-faint);
+      border: 1px solid var(--border-soft);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .offer-tile:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(90,62,40,0.12);
+    }
+    .offer-tile:hover .offer-tile-overlay {
+      opacity: 1;
+    }
+    .offer-tile:hover .offer-tile-cta {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Poster image fills the tile */
+    .offer-tile-img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    /* Hover overlay */
+    .offer-tile-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(90,62,40,0.55);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 32px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .offer-tile-cta {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--gold);
+      padding: 12px 28px;
+      border-radius: var(--radius);
+      transform: translateY(8px);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Mobile: always show label below poster */
+    .offer-tile-label {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-soft);
+    }
+    .offer-tile-label-text { }
+    .offer-tile-label-name {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--brown);
+      margin-bottom: 2px;
+    }
+    .offer-tile-label-price {
+      font-size: 11px;
+      color: var(--gold);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+    }
+    .offer-tile-arrow {
+      width: 32px;
+      height: 32px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .offer-tile:hover .offer-tile-arrow {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--white);
+    }
+
+    /* ══ CTA STRIP ══ */
+    .cta-strip {
+      background: var(--brown);
+      padding-block: 56px;
+      text-align: center;
+    }
+    .cta-strip h2 { color: var(--white); margin-bottom: 10px; }
+    .cta-strip p { color: rgba(255,255,255,0.5); margin-bottom: 28px; max-width: 400px; margin-inline: auto; }
+
+    /* ══ FOOTER ══ */
+    footer { background: var(--brown); padding: 56px 0 32px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .footer-inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+    .footer-logo { font-family: var(--serif); font-size: 1.55rem; font-weight: 500; color: var(--white); letter-spacing: 0.06em; margin-bottom: 2px; }
+    .footer-tagline { font-size: 11px; letter-spacing: 0.14em; color: var(--champagne); margin-bottom: 28px; }
+    .footer-links { display: flex; gap: 24px; margin-bottom: 24px; flex-wrap: wrap; justify-content: center; }
+    .footer-links a { font-size: 11px; color: rgba(255,255,255,0.45); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--champagne); }
+    .footer-social { display: flex; gap: 12px; margin-bottom: 32px; }
+    .footer-social a { width: 34px; height: 34px; border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.45); transition: all 0.3s; }
+    .footer-social a:hover { border-color: var(--champagne); color: var(--champagne); }
+    .footer-bottom { width: 100%; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; font-size: 11px; color: rgba(255,255,255,0.28); }
+
+    .fade-up { opacity: 0; transform: translateY(18px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta, .lang-switch { display: none; }
+      .hamburger { display: flex; }
+    }
+    @media (max-width: 680px) {
+      .offers-grid { grid-template-columns: 1fr; gap: 24px; }
+      .offer-tile-img { aspect-ratio: 3/4; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="mainNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="TF_logo_transp.png" alt="Top Feeling Logo" class="nav-logo-img" onerror="this.style.display='none'" />
+      Top Feeling
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#why">Why Us</a></li>
+      <li><a href="index.html#reviews">Reviews</a></li>
+      <li><a href="index.html#contact">Visit Us</a></li>
+      <li><a href="offers.html" class="active">Offers</a></li>
+    </ul>
+    <a href="https://wa.me/6598168488?text=Hi%20Top%20Feeling%2C%20I%27d%20like%20to%20enquire%20about%20your%20current%20offers" class="nav-cta" target="_blank" rel="noopener">Book Now</a>
+    <div class="lang-switch">
+      <a href="offers.html" class="lang active">EN</a>
+      <span>/</span>
+      <a href="cn_offers.html" class="lang">中文</a>
+    </div>
+    <div class="hamburger" id="hamburger" role="button" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close">✕</button>
+  <a href="index.html#services" onclick="closeMobile()">Services</a>
+  <a href="index.html#why"      onclick="closeMobile()">Why Us</a>
+  <a href="index.html#reviews"  onclick="closeMobile()">Reviews</a>
+  <a href="index.html#contact"  onclick="closeMobile()">Visit Us</a>
+  <a href="offers.html"         onclick="closeMobile()">Offers</a>
+  <div style="display:flex; gap:18px; margin-top:8px;">
+    <a href="offers.html"    onclick="closeMobile()" style="font-size:1.1rem; font-family:var(--sans); color:var(--gold);">EN</a>
+    <a href="cn_offers.html" onclick="closeMobile()" style="font-size:1.1rem; font-family:var(--sans);">中文</a>
+  </div>
+  <a href="https://wa.me/6598168488?text=Hi%20Top%20Feeling%2C%20I%27d%20like%20to%20enquire%20about%20your%20current%20offers" target="_blank" rel="noopener" style="color:var(--gold); font-size:1.3rem; margin-top:16px; font-family:var(--sans);">WhatsApp to Book</a>
+</div>
+
+<!-- ══ PAGE HEADER ══ -->
+<div class="page-header">
+  <div class="container">
+    <span class="eyebrow">What's On</span>
+    <div class="divider" style="margin-inline:auto;"></div>
+    <h1>Current Offers</h1>
+    <p>Tap any poster to find out more and book.</p>
+  </div>
+</div>
+
+<!-- ══ OFFERS GRID ══ -->
+<section class="offers-section">
+  <div class="container">
+    <div class="offers-grid">
+
+      <!-- Embroidered Eyebrows (202607 — newest) -->
+      <a href="embroidered_eyebrows.html" class="offer-tile fade-up">
+        <img src="P/202607-Promo-Masterposter-EmbroideredEyebrows.png" alt="$198 Embroidered Eyebrows" class="offer-tile-img" onerror="this.style.background='var(--champagne-faint)'; this.style.minHeight='320px';" />
+        <div class="offer-tile-overlay"><span class="offer-tile-cta">Find Out More</span></div>
+        <div class="offer-tile-label">
+          <div class="offer-tile-label-text">
+            <div class="offer-tile-label-name">Embroidered Eyebrows</div>
+            <div class="offer-tile-label-price">$198 · U.P. $888</div>
+          </div>
+          <div class="offer-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Bojin Facial (202607) -->
+      <a href="bojin_facial.html" class="offer-tile fade-up">
+        <img src="P/202607-Promo-Masterposter-Bojin.png" alt="$58 Bojin Facial" class="offer-tile-img" onerror="this.style.background='var(--champagne-faint)'; this.style.minHeight='320px';" />
+        <div class="offer-tile-overlay"><span class="offer-tile-cta">Find Out More</span></div>
+        <div class="offer-tile-label">
+          <div class="offer-tile-label-text">
+            <div class="offer-tile-label-name">Bojin Facial</div>
+            <div class="offer-tile-label-price">$58</div>
+          </div>
+          <div class="offer-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Leg Massage & Gel Pedicure (202607) -->
+      <a href="leg_massage_pedicure.html" class="offer-tile fade-up">
+        <img src="P/202607-Promo-Masterposter-leg-massage.png" alt="$58+ Relaxing Leg Massage & Gel Pedicure" class="offer-tile-img" onerror="this.style.background='var(--champagne-faint)'; this.style.minHeight='320px';" />
+        <div class="offer-tile-overlay"><span class="offer-tile-cta">Find Out More</span></div>
+        <div class="offer-tile-label">
+          <div class="offer-tile-label-text">
+            <div class="offer-tile-label-name">Relaxing Leg Massage &amp; Gel Pedicure</div>
+            <div class="offer-tile-label-price">From $58+</div>
+          </div>
+          <div class="offer-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Cat Eye Gel Manicure (202606) -->
+      <a href="cat_eye_gel.html" class="offer-tile fade-up">
+        <img src="P/202606-Promo-Masterposter-Cat.png" alt="$58 Cat Eye Gel Manicure" class="offer-tile-img" onerror="this.style.background='var(--champagne-faint)'; this.style.minHeight='320px';" />
+        <div class="offer-tile-overlay"><span class="offer-tile-cta">Find Out More</span></div>
+        <div class="offer-tile-label">
+          <div class="offer-tile-label-text">
+            <div class="offer-tile-label-name">Cat Eye Gel Manicure</div>
+            <div class="offer-tile-label-price">$58</div>
+          </div>
+          <div class="offer-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Express Gel Manicure (202606 — oldest) -->
+      <a href="gel_manicure.html" class="offer-tile fade-up">
+        <img src="P/202606-Promo-Masterposter-GelishV3.png" alt="$38+ Express Gel Manicure" class="offer-tile-img" onerror="this.style.background='var(--champagne-faint)'; this.style.minHeight='320px';" />
+        <div class="offer-tile-overlay"><span class="offer-tile-cta">Find Out More</span></div>
+        <div class="offer-tile-label">
+          <div class="offer-tile-label-text">
+            <div class="offer-tile-label-name">Express Gel Manicure</div>
+            <div class="offer-tile-label-price">From $38+</div>
+          </div>
+          <div class="offer-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA STRIP ══ -->
+<div class="cta-strip">
+  <div class="container">
+    <h2>Not sure which to pick?</h2>
+    <p>Message us and we'll help you choose the right treatment for you.</p>
+    <a href="https://wa.me/6598168488?text=Hi%20Top%20Feeling%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20current%20offers" class="btn btn-primary" target="_blank" rel="noopener">Chat with Us on WhatsApp</a>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container footer-inner">
+    <img src="TF_logo_transp.png" alt="Top Feeling Logo" style="width:50px;height:50px;object-fit:contain;border-radius:50%;margin-bottom:10px;opacity:0.75;" onerror="this.style.display='none'" />
+    <div class="footer-logo">Top Feeling</div>
+    <div class="footer-tagline">Beauty made everyday · Westgate #03-22 · Jurong East</div>
+    <nav class="footer-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#contact">Visit Us</a>
+      <a href="offers.html">Offers</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/topfeelingsg/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.facebook.com/TopFeelingSG" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://wa.me/6598168488" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </a>
+    </div>
+    <div class="footer-bottom">© 2026 Top Feeling · 3 Gateway Dr #03-22, Westgate · Singapore 608532 · topfeelingsg.com</div>
+  </div>
+</footer>
+
+<!-- ══ JS ══ -->
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 10); }, { passive: true });
+
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  document.getElementById('mobileClose').addEventListener('click', closeMobile);
+  function closeMobile() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
